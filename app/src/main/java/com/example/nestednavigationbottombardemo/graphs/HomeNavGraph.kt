@@ -52,7 +52,7 @@ fun NavGraphBuilder.detailsNavGraph(navController: NavHostController) {
         }
         composable(route = DetailsScreen.Overview.route) {
             ScreenContent(name = DetailsScreen.Overview.route) {
-                navController.popBackStack()
+                navController.popBackStack(DetailsScreen.Information.route, false)
             }
         }
     }
